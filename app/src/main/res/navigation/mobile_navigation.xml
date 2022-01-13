@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/main_menu">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.login_navview.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.login_navview.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.login_navview.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/main_menu"
+        android:name="com.example.login_navview.administrar"
+        android:label="Menú Principal"
+        tools:layout="@layout/administrar" />
+    <fragment
+        android:id="@+id/manage_users"
+        android:name="com.example.login_navview.configuracion"
+        android:label="Gestión de Usuarios"
+        tools:layout="@layout/configuracion" />
+    <fragment
+        android:id="@+id/general_settings"
+        android:name="com.example.login_navview.moneda"
+        android:label="Ajustes Generales"
+        tools:layout="@layout/moneda" />
+    <fragment
+        android:id="@+id/new_release"
+        android:name="com.example.login_navview.promociones"
+        android:label="Nueva Publicación"
+        tools:layout="@layout/promociones" />
+    <fragment
+        android:id="@+id/my_posts"
+        android:name="com.example.login_navview.pagos"
+        android:label="Mis Publicaciones"
+        tools:layout="@layout/pagos" />
+    <fragment
+        android:id="@+id/favorites"
+        android:name="com.example.login_navview.salud"
+        android:label="Favoritos"
+        tools:layout="@layout/salud" />
+    <fragment
+        android:id="@+id/shop"
+        android:name="com.example.login_navview.ofertas"
+        android:label="Tienda"
+        tools:layout="@layout/ofertas" />
+
+
+</navigation>
